@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Fjalla+One&family=Indie+Flower&family=Nunito:wght@500&family=Rock+3D&family=Sedgwick+Ave&family=Shizuru&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul li{
+    list-style: none;
+}
+main{
+    height: 100vh;
+    width: 100%;
+    background: url("./Image/bc3.jpg") no-repeat center;
+    background-size: cover;
+   position: relative;
+}
+.navWrappper{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #ffff;
+    box-shadow: 0px 0px 25px 0 rgb(0 0 0 / 8%);
+    z-index: 997;
+    font-size: 20px;
+    text-align: center;
+    position: fixed;
+    
+}
+.navWrappper nav {
+    flex-basis: 50%;
+  
+}
+.navWrappper nav ul{
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+.header-social-links{
+    width: 130px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+section{
+    width: 500px;
+    height: 200px;
+    display: flex;
+    position: absolute;
+    top: 40%;
+    left: 33%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    animation: zoom-in-zoom-out ease-out 1s ;
+    
+
+}
+@keyframes zoom-in-zoom-out {
+    0% {
+    transform: scale(1);
+    }
+    50% {
+    transform: scale(1.5);
+    }
+    100% {
+    transform: scale(1);
+    }
+    }
+section h1{
+    font-size: 50px;
+    color: #fff;
+    line-height: 5rem;
+    letter-spacing: 3px;
+}
+section p{
+    color: lightgrey;
+    font-size: 29px;
+    letter-spacing: 4px;
+}
+section a{
+    margin-top: 20px;
+    background-color: #5a01a7;
+    padding: 10px 10px 0 25px ;
+    border-radius: 40px;
+    width: 120px;
+    height: 40px;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+
+
+/* About page styling */
+
+
+/* This is a skills ko section */
+#skillsSection_main{
+  height: 100vh;
+  width: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+align-items: center;
+padding-top: 5%;
+}
+.card_section{
+  height: 80%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-around;
+  gap:80px 10px;
+  margin-top: 50px;
+}
+.card{
+  height: 340px;
+  min-width: 200px;
+  max-width: 270px;
+  box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s ease;
+  border-radius: 10px;
+}
+.card:hover{
+  transform: scale(1.1);
+  background-color: rgb(149, 143, 231);
+  font-weight: 1000;
+  color: #fff;
+}
+.card img{
+  height: 70px;
+  width: 70px;
+}
+/* Styling Contact page */
+.Contactmain{
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(110, 110, 117);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 50px;
+  color: #fff;
+}
+.Contactmain .title {
+  font-size: 40px;
+  padding-top: 20px;
+}
+.formsection{
+  height: 80%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+.ContactRightSection{
+  width: 35%;
+}
+.ContactLeftSection p{
+  color: rgb(206, 206, 209);
+}
+.ContactLeftSection{
+  width: 35%;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+ 
+}
+.Box{
+  display: flex;
+  margin-top: 40px;
+  
+}
+.Box .icons {
+  height: 40px;
+  width: 40px;
+  margin-right: 30px;
+  padding: 10px 10px;
+  background-color: rgb(15, 233, 15);
+  border-radius: 50%;
+  
+}
+.ContactRightSection form input{
+  width: 100%;
+  height: 40px;
+  border: none;
+    outline: none;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.ContactRightSection form input:nth-child(5){
+  background-color: rgb(15, 233, 15);
+  width: 140px;
+  text-align: center;
+  border-radius: 40px;
+  color: #fff;
+  font-weight: bold;
+}
+.ContactRightSection form textarea{
+  width: 100%;
+}
+/* Tablet Mode  */
+
+.bottomNav{
+  display: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: black;
+}
+.bottomNav nav ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: greenyellow;
+}
+.bottomNav nav ul li a{
+  color: #fff;
+  padding-top: 10px;
+}
+  .bottomNav{
+    display:none;
+  }
+
+
+@media screen and (max-width:880px) {
+ 
+  .navWrappper nav {
+    display: none;
+  }
+  .bottomNav{
+    width: 100%;
+    display: block;
+  }
+  .details_Container{
+    flex-direction: column;
+    height: 120vh;
+  }
+  
+  #skillsSection_main
+  {
+    padding-top: 10%;
+  }
+.card_section{
+  grid-template-columns: auto auto ;
+  padding-top: 5%;
+}
+.formsection{
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  margin-top: 10%;
+}
+.ContactRightSection{
+  width: 80%;
+}.ContactLeftSection{
+  width: 80%;
+}
+section{
+  left: 10%;
+}
+section h1{
+  
+
+  font-size: 30px;
+}
+section p{
+  font-size: 20px;
+}
+}
+@media screen and (max-width:480px){
+  .bottomNav{
+    width: 99%;
+    display: block;
+  }
+  .bottomNav nav ul li a{
+    font-size: 15px;
+  }
+  section{
+    left: -12%;
+  }
+  section h1{
+    
+  
+    font-size: 20px;
+  }
+  section p{
+    font-size: 17px;
+  }
+  .Contactmain{
+    height: 120vh;
+    padding-top: 10%;
+  }
+  .card_section{
+    grid-template-columns: auto;
+  }
+  .About_main_container{
+    flex-direction: column;
+    height: 100%;
+  }
+  .aboutpage_rightContent{
+    width: 90%;
+    
+  }
+  .aboutpage_leftContent{
+    width: 50%;
+  }
+  .light{
+    display: none;
+  }
+  .main .title{
+    font-size: 20px;
+    width: 100%;
+    left: 0;
+  }
+  .main .title hr{
+    width: 70%;
+  }
+  .main{
+    height: 100vh;
+  }
+  .description h1 ,h3 {
+    width: 100%;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: -5px;
+  }
+  .navigation nav ul{
+    display: none;
+  }
+  .menuBtn{
+    display: block;
+  }
+  .activenav{
+    display: block;
+  }
+ 
+  #skillsSection_main
+  {
+    padding-top: 25%;
+  }
+}

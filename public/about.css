@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Fjalla+One&family=Indie+Flower&family=Nunito:wght@500&family=Rock+3D&family=Sedgwick+Ave&family=Shizuru&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: grey;
+}
+ul li {
+  list-style: none;
+}
+main {
+  height: 100vh;
+  width: 100%;
+}
+.navWrappper_about {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #ffff;
+  box-shadow: 0px 0px 25px 0 rgb(0 0 0 / 8%);
+  z-index: 997;
+  font-size: 20px;
+
+  position: fixed;
+}
+.navWrappper_about nav ul li a {
+  color: grey;
+}
+.navWrappper_about nav ul li a:active {
+  border-bottom: 3px solid skyblue;
+}
+.navWrappper_about h1 a {
+  font-weight: 50;
+  font-size: 30px;
+  color: black;
+}
+.navWrappper_about nav {
+  flex-basis: 50%;
+}
+.navWrappper_about nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+.header-social-links {
+  width: 130px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#about_Wrapper {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 6%;
+  align-items: center;
+  
+}
+.about h1 {
+  font-size: 40px;
+  color: rgb(76, 78, 81);
+  font-weight: 500;
+  border-bottom: 4px solid rgb(0, 119, 255);
+}
+.someWord {
+  padding-top: 20px;
+  width: 80%;
+  text-align: center;
+  font-size: 18px;
+  color: gray;
+}
+.details_Container {
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  padding-top: 70px;
+}
+.leftDetails_container img {
+  height: 350px;
+  width: 370px;
+}
+.RighDetails_container {
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+}
+.rightheading h1{
+    color: rgb(0, 0, 0, 0.8);
+    font-size: 30px;
+    line-height: 70px;
+}
+.rightheading p{
+    color: gray;
+    
+}
+.DetailsSection {
+  width: 100%;
+  
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Content {
+  line-height: 50px;
+  color: rgb(0, 0, 0, 0.8);
+}
+.Content h2 > span {
+  color: gray;
+}
+.bottomNav{
+  display: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: black;
+}
+.bottomNav nav ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: greenyellow;
+}
+@media screen and (max-width:780px){
+  .navWrappper_about nav {
+    display: none;
+  }
+  .details_Container{
+    flex-direction: column;
+    height: 120vh;
+  }
+  .RighDetails_container{
+    width: 90%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+  }
+  .about {
+    padding-top: 4%;
+  }
+  .rightheading p{
+    font-size: 14px;
+  }
+  .bottomNav{
+    display: block;
+  }
+}
